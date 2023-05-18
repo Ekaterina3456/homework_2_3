@@ -4,11 +4,8 @@
 // 12821 -> да
 // 23432 -> да
 
-Console.WriteLine("введите 5-значное число");
-int num = Convert.ToInt32(Console.ReadLine());
-int result = 0;
-int dubl = num;
-
+int IndexOf(int num, int dubl, int result)
+{
 if (num > 9999 & num < 100000)
 {
     while (dubl > 0)
@@ -24,3 +21,16 @@ if (num > 9999 & num < 100000)
 }
 else
     Console.WriteLine("введите 5-значное число");
+return result;
+}
+
+
+
+
+Console.WriteLine("введите 5-значное число");
+int num = Convert.ToInt32(Console.ReadLine());
+int result = 0;
+int dubl = num;
+Console.WriteLine(IndexOf(num, dubl, result));
+
+

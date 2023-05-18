@@ -5,11 +5,11 @@
 Console.WriteLine("введите число");
 int num = Convert.ToInt32(Console.ReadLine());
 int num1 = 1;
-double result =0;
+double result = 0;
 
 while (num1 <= num)
 {
-    result = Math.Pow(num1,3);
+    result = Math.Pow(num1, 3);
     Console.Write($"{result} ");
     num1++;
 }
